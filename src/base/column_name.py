@@ -55,3 +55,12 @@ class TimeDataValue:
     AFTERNOON_PEAK = 'afternoon_peak'
     AFTERNOON_NON_PEAK = 'afternoon_non_peak'
     NIGHTTIME = 'nighttime'
+    
+class PmDataCN:
+    DATE = 'date' # 이름 겹쳐도 괜찮나?
+    DAEDEOKGU = 'Daedeok-gu' # 정식 명칭 혹은 그냥 붙여서
+    DONGGU = 'Dong-gu'
+    SEOGU = 'Seo-gu'
+    YUSEONGGU = 'Yuseong-gu'
+    JUNGGU = 'Jung-gu'
+    

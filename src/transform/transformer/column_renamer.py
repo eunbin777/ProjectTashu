@@ -1,7 +1,7 @@
 from sklearn.base import BaseEstimator, TransformerMixin
 import pandas as pd
 
-from src.base.column_name import RentDataCN, WeatherDataCN
+from src.base.column_name import RentDataCN, WeatherDataCN, PmDataCN
 
 
 class ColumnRenamer(BaseEstimator, TransformerMixin):
@@ -36,5 +36,11 @@ class ColumnRenamer(BaseEstimator, TransformerMixin):
             '습도(%)': WeatherDataCN.HUMIDITY,
             '일조(hr)': WeatherDataCN.SUNSHINE_DURATION,
             '현상번호(국내식)': WeatherDataCN.WEATHER_NUMBER,
-            '지면온도(°C)': WeatherDataCN.GROUND_TEMPERATURE
+            '지면온도(°C)': WeatherDataCN.GROUND_TEMPERATURE,
+            '날짜':PmDataCN.DATE,
+            '대덕구': PmDataCN.DAEDEOKGU,
+            '동구': PmDataCN.DONGGU,
+            '서구': PmDataCN.SEOGU,
+            '유성구': PmDataCN.YUSEONGGU,
+            '중구': PmDataCN.JUNGGU
         })
